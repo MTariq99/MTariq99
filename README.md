@@ -14,7 +14,7 @@
 </div>
 
 <div align="center">
-<img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=husnainkhurshiid&layout=compact&show_icon=true&theme=algolia" alt="tienhuynh-tn-langs"/>
+<img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MTariq99&layout=compact&show_icon=true&theme=algolia" alt="tienhuynh-tn-langs"/>
 <img height="150em" src="https://github-readme-stats.vercel.app/api/?username=MTariq99&layout=compact&show_icon=true&theme=algolia" alt="tienhuynh-tn-stats"/>
 </div>
 <div align="center">
