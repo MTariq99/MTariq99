@@ -14,13 +14,13 @@
 	
 ## <picture><img src="https://github.com/MTariq99/MTariq99/raw/main/assets/about_me.gif" width = 50px></picture> **About me**
 
-<picture> <img align="right" src="https://github.com/Mubashir01234/Mubashir01234/raw/main/assets/developer.gif" width = 250px></picture>
+<picture> <img align="right" src="https://github.com/MTariq99/MTariq99/raw/main/assets/developer.gif" width = 250px></picture>
 
 <br>
 
 - A passionate backend developer from Pakistan🇵🇰
 -  Software Engineerin Student
-- 📄 Know about my experiences <a href="https://github.com/MTariq99/MTariq99/raw/main/assets/Mubashir_Resume.pdf" target="blank">Resume</a>
+- 📄 Know about my experiences <a href="https://github.com/MTariq99/MTariq99/raw/main/assets/tariq.resume.pdf" target="blank">Resume</a>
    🔭 I’m currently working in <a href="https://www.capregsoft.com/" target="blank">CapregSoft Private Limited</a>
 <br><br>
 
