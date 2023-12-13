@@ -12,7 +12,7 @@
 
 
 	
-## <picture><img src="https://github.com/Mubashir01234/Mubashir01234/raw/main/assets/about_me.gif" width = 50px></picture> **About me**
+## <picture><img src="https://github.com/MTariq99/MTariq99/raw/main/assets/about_me.gif" width = 50px></picture> **About me**
 
 <picture> <img align="right" src="https://github.com/Mubashir01234/Mubashir01234/raw/main/assets/developer.gif" width = 250px></picture>
 
@@ -39,7 +39,7 @@
 
 <div align="center">
 	
-<img src="https://profile-counter.glitch.me/Mubashir01234/count.svg"/>
+<img src="https://profile-counter.glitch.me/MTariq99/count.svg"/>
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
