@@ -35,7 +35,7 @@
 ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"><b> Github Stats </b>
 <be>
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=Mubashir01234&theme=algolia&background=0d1117&hide_border=true" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=MTariq99&theme=algolia&background=0d1117&hide_border=true" />
 
 <div align="center">
 	
