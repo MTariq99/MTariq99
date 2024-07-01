@@ -20,7 +20,7 @@
 
 - A passionate backend developer from Pakistan🇵🇰
 -  Software Engineering Student
-- 📄 Know about my experiences <a href="https://github.com/MTariq99/MTariq99/raw/main/assets/assets/Resume.pdf" target="blank">Resume</a>
+- 📄 Know about my experiences <a href="https://github.com/MTariq99/MTariq99/raw/main/assets/Resume.pdf" target="blank">Resume</a>
    🔭 I’m currently working in <a href="https://www.capregsoft.com/" target="blank">CapregSoft Private Limited</a>
 <br><br>
 
