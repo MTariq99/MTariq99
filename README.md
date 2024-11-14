@@ -21,7 +21,7 @@
 - A passionate backend developer from Pakistan🇵🇰
 -  Software Engineering Student
 - 📄 Know about my experiences <a href="https://github.com/MTariq99/MTariq99/raw/main/assets/cv.pdf" target="blank">Resume</a>
-   🔭 I’m currently working in <a href="https://zamhtech.com/" target="blank">CapregSoft Private Limited</a>
+   🔭 I’m currently working in <a href="https://zamhtech.com/" target="blank">ZAMHTECH</a>
 <br><br>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
