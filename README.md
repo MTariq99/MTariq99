@@ -19,7 +19,7 @@
 <br>
 
 - A passionate backend developer from Pakistan🇵🇰
--  Software Engineering Student
+-  Software Engineer
 - 📄 Know about my experiences <a href="https://github.com/MTariq99/MTariq99/raw/main/assets/resumee.pdf" target="blank">Resume</a>
    🔭 I’m currently working in <a href="https://zamhtech.com/" target="blank">ZAMHTECH</a>
 <br><br>
