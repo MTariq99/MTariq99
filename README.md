@@ -1,154 +1,177 @@
- <p align="center">
-  <img src="https://github.com/MTariq99/MTariq99/raw/main/assets/github_2.gif" width="110" alt="Developer animation" />
-</p>
+ <div align="center">
 
-<h1 align="center">Muhammad Tariq</h1>
+  <img src="https://github.com/MTariq99/MTariq99/raw/main/assets/github_2.gif" width="100" alt="Developer animation" />
 
-<h3 align="center">Go Backend Engineer · Distributed Systems · AI Application Engineering</h3>
+  # Muhammad Tariq
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=17&duration=3500&pause=1200&color=67E8F9&center=true&vCenter=true&width=650&lines=Building+reliable+backend+systems;Engineering+distributed+services;Exploring+RAG+and+LLM+applications" alt="Animated engineering tagline" />
-</p>
+  ### Backend Engineer · Go · Distributed Systems · AI Applications
 
-<p align="center">
-  <a href="https://github.com/MTariq99?tab=repositories">
-    <img src="https://img.shields.io/badge/PROJECTS-67E8F9?style=flat-square&logo=github&logoColor=0D1117" alt="Projects" />
+  <a href="https://readme-typing-svg.herokuapp.com">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&duration=3500&pause=1200&color=67E8F9&center=true&vCenter=true&width=600&lines=Building+Reliable+Backend+Systems;Engineering+Distributed+Services;Exploring+RAG+%26+LLM+Applications" alt="Engineering tagline" />
   </a>
-  <a href="https://github.com/MTariq99/MTariq99/raw/main/assets/Muhammad_Tariq_Resume_AI.pdf">
-    <img src="https://img.shields.io/badge/RESUME-30363D?style=flat-square&logo=adobeacrobatreader&logoColor=white" alt="Resume" />
-  </a>
-  <a href="https://www.target-energysolutions.com/">
-    <img src="https://img.shields.io/badge/ENGINEERING-30363D?style=flat-square&logo=go&logoColor=67E8F9" alt="Engineering" />
-  </a>
-</p>
+
+  [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-0D1117?style=flat-square&logo=vercel&logoColor=67E8F9)](https://muhammad-tariq.vercel.app/)
+  [![GitHub](https://img.shields.io/badge/GitHub-MTariq99-0D1117?style=flat-square&logo=github&logoColor=67E8F9)](https://github.com/MTariq99)
+  [![Resume](https://img.shields.io/badge/Resume-View-0D1117?style=flat-square&logo=adobeacrobatreader&logoColor=67E8F9)](https://github.com/MTariq99/MTariq99/raw/main/assets/Muhammad_Tariq_Resume_AI.pdf)
+
+</div>
 
 ---
 
-### `$ whoami`
+<table>
+<tr>
+<td width="60%" valign="top">
 
-Backend engineer from Islamabad, Pakistan, with **5+ years of professional experience in Go and Node.js**.
+## About Me
 
-I build APIs, distributed services, microservice architectures, and real-time systems. I'm expanding into AI application engineering, focusing on retrieval-augmented generation, LLM integration, and reliable orchestration.
+I'm a backend engineer from Pakistan with 5+ years of professional experience in Go and Node.js.
 
-- **Backend:** Go, Node.js, gRPC, REST APIs, WebSockets
-- **Distributed systems:** Microservices, messaging, caching, observability
-- **AI engineering:** RAG, vector search, embeddings, LLM integration, evaluation
-- **Engineering principles:** Tenant isolation, explicit authorization, idempotency, measurable reliability
+I design and build distributed systems, microservices, real-time applications, and backend APIs. I'm currently expanding into AI application engineering, focusing on RAG systems, LLM integration, and dependable AI orchestration.
 
-Currently working on backend systems while building practical AI engineering projects.
+- Backend architecture and API development
+- Distributed systems and microservices
+- Real-time communication and messaging
+- Retrieval-augmented generation and LLM applications
+- Security, tenant isolation, and idempotent workflows
 
----
+</td>
+<td width="40%" valign="top">
 
-### `$ ls ./projects`
+## Focus
 
-<box gap={3}>
-  <box border radius="lg" padding={4} gap={3}>
-    <row align="center" gap={2}>
-      <icon name="database" color="#67E8F9" size="xl"/>
-      <box flex="1" gap={1}>
-        <title size="lg">Retrievion</title>
-        <text color="secondary" size="sm">Multi-tenant RAG application · Go</text>
-      </box>
-      <badge color="secondary">In development</badge>
-    </row>
-    A retrieval-augmented generation system exploring document ingestion, hybrid retrieval, and grounded LLM responses.
+**Backend Engineering**
 
-    **Engineering highlights**
-    - PostgreSQL and pgvector for vector similarity search.
-    - PostgreSQL full-text search and Reciprocal Rank Fusion (RRF).
-    - Parent-child chunking and embedding workflows.
-    - Tenant-scoped document access and retrieval evaluation tooling.
-    - Redis, RabbitMQ, and Gemini integration.
+Go · gRPC · Node.js · WebSockets
 
-    <row wrap="wrap" gap={2}>
-      <badge>Go</badge>
-      <badge>PostgreSQL</badge>
-      <badge>pgvector</badge>
-      <badge>Redis</badge>
-      <badge>RabbitMQ</badge>
-    </row>
-    <text><icon name="github" size="sm" inline/> [Explore Retrievion](https://github.com/MTariq99/retrievion)</text>
-  </box>
-  <box border radius="lg" padding={4} gap={3}>
-    <row align="center" gap={2}>
-      <icon name="workflow" color="#67E8F9" size="xl"/>
-      <box flex="1" gap={1}>
-        <title size="lg">DispatchAI</title>
-        <text color="secondary" size="sm">AI orchestration engine · Go</text>
-      </box>
-      <badge color="secondary">Early stage</badge>
-    </row>
-    An orchestration layer designed to connect LLM-powered workflows with host applications while keeping business logic and authorization under application control.
+**Data & Infrastructure**
 
-    **Engineering highlights**
-    - Cryptographically signed integration requests.
-    - Idempotency scoped to integrations and request keys.
-    - Explicit orchestration and execution lifecycle.
-    - Separation of AI-generated output from authoritative business data.
-    - Integration boundaries between the engine and host applications.
+PostgreSQL · pgvector · Redis · RabbitMQ · Docker
 
-    <row wrap="wrap" gap={2}>
-      <badge>Go</badge>
-      <badge>API security</badge>
-      <badge>Idempotency</badge>
-      <badge>Orchestration</badge>
-    </row>
-    <text><icon name="github" size="sm" inline/> [Explore DispatchAI](https://github.com/MTariq99/dispatchai)</text>
-  </box>
-</box>
+**AI Engineering**
+
+RAG · Embeddings · Hybrid Search · LLM Integration · Evaluation
+
+**Location**
+
+Islamabad, Pakistan 🇵🇰
+
+</td>
+</tr>
+</table>
 
 ---
 
-### `$ cat tech-stack`
+## Selected Projects
 
-**Backend & communication**
+<table>
+<tr>
+<td width="50%" valign="top">
 
-<p>
-  <img src="https://skillicons.dev/icons?i=go,nodejs,express,graphql" alt="Go, Node.js, Express and GraphQL" />
-</p>
+<h3>Retrievion</h3>
 
-**Databases & messaging**
+<sub>01 / AI ENGINEERING</sub>
 
-<p>
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,rabbitmq,kafka" alt="PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ and Kafka" />
-</p>
+A multi-tenant retrieval-augmented generation application designed to ground LLM responses in retrieved documents.
 
-**Infrastructure & observability**
+**What I've built**
 
-<p>
-  <img src="https://skillicons.dev/icons?i=docker,git,github,linux,prometheus,grafana" alt="Docker, GitHub, Linux, Prometheus and Grafana" />
-</p>
+- Vector search with PostgreSQL and pgvector
+- Hybrid retrieval with PostgreSQL full-text search
+- Reciprocal Rank Fusion for combining search results
+- Document chunking and embedding workflows
+- Tenant-scoped access and evaluation tooling
 
-**AI application engineering**
+**Stack**
 
-`RAG` · `Vector Search` · `Embeddings` · `LLM APIs` · `Hybrid Retrieval` · `Evaluation`
+`Go` `PostgreSQL` `pgvector` `Redis` `RabbitMQ` `Gemini`
+
+<br />
+
+<a href="https://github.com/MTariq99/retrievion">
+  <strong>Explore Repository →</strong>
+</a>
+
+</td>
+<td width="50%" valign="top">
+
+<h3>DispatchAI</h3>
+
+<sub>02 / DISTRIBUTED AI</sub>
+
+An early-stage AI orchestration engine exploring secure integration between LLM-powered workflows and host applications.
+
+**What I'm exploring**
+
+- Cryptographically signed integration requests
+- Idempotency scoped to integrations and keys
+- Orchestration and execution lifecycle design
+- Explicit separation of AI output from business truth
+- Integration and authorization boundaries
+
+**Stack**
+
+`Go` `API Security` `Idempotency` `AI Orchestration`
+
+<br />
+
+<a href="https://github.com/MTariq99/dispatchai">
+  <strong>Explore Repository →</strong>
+</a>
+
+</td>
+</tr>
+</table>
 
 ---
 
-### `$ git log --activity`
+## Technical Toolkit
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=MTariq99&show_icons=true&theme=github_dark&hide_border=true&title_color=67E8F9&icon_color=67E8F9" height="165" alt="GitHub statistics" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MTariq99&layout=compact&theme=github_dark&hide_border=true&title_color=67E8F9" height="165" alt="Most used languages" />
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=MTariq99&theme=github-dark-blue&hide_border=true&ring=67E8F9&fire=67E8F9&currStreakLabel=67E8F9" alt="GitHub contribution streak" />
-</p>
+**Languages & Backend**
+
+<img src="https://skillicons.dev/icons?i=go,nodejs,express,graphql&theme=dark" alt="Go, Node.js, Express and GraphQL" />
+
+<br />
+
+**Databases & Messaging**
+
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,rabbitmq,kafka&theme=dark" alt="PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ and Kafka" />
+
+<br />
+
+**Infrastructure & Observability**
+
+<img src="https://skillicons.dev/icons?i=docker,git,github,linux,prometheus,grafana&theme=dark" alt="Docker, GitHub, Linux, Prometheus and Grafana" />
+
+</div>
 
 ---
 
-### `$ connect`
+## GitHub Activity
 
-<p align="center">
-  <a href="https://github.com/MTariq99">
-    <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=67E8F9" alt="GitHub" />
-  </a>
-  <a href="https://www.target-energysolutions.com/">
-    <img src="https://img.shields.io/badge/Professional_Work-0D1117?style=for-the-badge&logo=go&logoColor=67E8F9" alt="Professional work" />
-  </a>
-</p>
+<div align="center">
 
-<p align="center">
-  <sub>Reliable systems. Thoughtful engineering. Practical AI.</sub>
-</p>
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=MTariq99&show_icons=true&theme=github_dark&hide_border=true&title_color=67E8F9&icon_color=67E8F9" alt="GitHub statistics" />
+
+<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MTariq99&layout=compact&theme=github_dark&hide_border=true&title_color=67E8F9" alt="Top languages" />
+
+<br />
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=MTariq99&theme=github-dark-blue&hide_border=true&ring=67E8F9&fire=67E8F9&currStreakLabel=67E8F9" alt="Contribution streak" />
+
+</div>
+
+---
+
+<div align="center">
+
+### Let's Build Something Useful
+
+Backend systems. Distributed architecture. Practical AI.
+
+[**Portfolio ↗**](https://muhammad-tariq.vercel.app/) · [**GitHub ↗**](https://github.com/MTariq99) · [**Repositories ↗**](https://github.com/MTariq99?tab=repositories)
+
+<sub>Designed with a focus on reliable engineering and continuous learning.</sub>
+
+</div>
