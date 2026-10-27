@@ -20,7 +20,7 @@
 
 - A passionate backend developer from Pakistan🇵🇰
 -  Software Engineer
-- 📄 Know about my experiences <a href="https://github.com/MTariq99/MTariq99/raw/main/assets/GO_CV.pdf" target="blank">Resume</a>
+- 📄 Know about my experiences <a href="https://github.com/MTariq99/MTariq99/raw/main/assets/Muhammad_Tariq_Resume_AI.pdf" target="blank">Resume</a>
    🔭 I’m currently working in <a href="https://zamhtech.com/" target="blank">Target Technologies Pakistan</a>
 <br><br>
 
