@@ -21,7 +21,7 @@
 - A passionate backend developer from Pakistan🇵🇰
 -  Software Engineer
 - 📄 Know about my experiences <a href="https://github.com/MTariq99/MTariq99/raw/main/assets/Muhammad_Tariq_Resume_AI.pdf" target="blank">Resume</a>
-   🔭 I’m currently working in <a href="https://www.target-energysolutions.com/" target="blank">Target Technologies Pakistan</a>
+   🔭 I’m currently working in <a href="https://www.target-energysolutions.com/" target="blank">Target Energy Solutions</a>
 <br><br>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
