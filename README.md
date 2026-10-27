@@ -105,7 +105,23 @@ LLMs propose actions; the host application remains responsible for validating an
 - Monitored application performance and service health using Prometheus and Grafana.
 - Investigated production issues and improved reliability through testing, refactoring, and code reviews.
 
-**Earlier experience:** Backend Developer at CapregSoft Ltd. (2023–2024) and Freelance Backend Engineer (2021–2023), working with Go, Node.js, event-driven architectures, Kafka, RabbitMQ, and gRPC.
+**CapregSoft Ltd.**  
+*Backend Developer (Go & Node.js) · January 2023 – August 2024 · Wah Cantt, On-site*
+
+- Developed backend services and APIs using Go and Node.js to support application features and business workflows.
+- Built backend functionality for a bulk email verification platform, supporting email verification workflows and related processing.
+- Improved database query performance through query restructuring, indexing, and server-side performance tuning.
+- Worked on database access patterns and backend logic to improve the efficiency and maintainability of existing services.
+- Operated blue-green deployment workflows to support application releases and reduce deployment risk.
+- Troubleshot backend defects and performance issues, contributing to service stability and ongoing application maintenance.
+
+**Freelance Backend Engineer**  
+*Backend Developer (Go) · April 2021 – January 2023 · Remote*
+
+- Delivered backend systems for clients across multiple industries using Go.
+- Designed event-driven microservice architectures with Apache Kafka and RabbitMQ.
+- Reduced data processing latency through asynchronous pipeline design and performance tuning.
+- Implemented gRPC for inter-service communication across client projects.
 
 ## Engineering toolkit
 
