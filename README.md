@@ -84,7 +84,7 @@ Remote backend roles where I can own services end to end, ideally Go-first. I'm 
 
 I'm based in Islamabad (UTC+5), currently working on-site, and open to remote roles.
 
-📧 [your.email@example.com](mailto:tariqwc99@gmail.com)
+📧 [Email](mailto:tariqwc99@gmail.com)
 
 💼 [LinkedIn](https://www.linkedin.com/in/mtariq99/)
 
