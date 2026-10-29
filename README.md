@@ -1,177 +1,93 @@
- <div align="center">
+# Hey, I'm Tariq 👋
 
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=15&duration=3500&pause=1400&color=67E8F9&center=true&vCenter=true&width=620&lines=Go+Backend+Engineer;Distributed+Systems+%26+Microservices;AI%2FLLM+Application+Engineering" alt="Professional headline" />
+**Backend engineer (Go).** I build the parts of a system that have to keep working: live tracking, gRPC microservices, event pipelines, and the plumbing behind the dashboard.
 
-  <h1>Muhammad Tariq</h1>
+I've spent 5+ years doing that in Go and Node.js, most recently on logistics platforms for the Government of Oman. Lately I've been pointing the same instincts at LLM backends: retrieval, grounded answers, evals, and keeping the model on a short leash.
 
-  <p>
-    <strong>Backend Engineer (Go) · AI/LLM Application Engineering</strong>
-  </p>
-
-  Building reliable backend systems and exploring practical AI applications.
-  <br />
-  Islamabad, Pakistan
-
-  <br /><br />
-
-  <a href="https://muhammad-tariq.vercel.app/">Portfolio ↗</a>
-  &nbsp; · &nbsp;
-  <a href="https://github.com/MTariq99">GitHub ↗</a>
-  &nbsp; · &nbsp;
-  <a href="https://github.com/MTariq99/MTariq99/raw/main/assets/Muhammad_Tariq_Resume_AI.pdf">Resume ↗</a>
-  &nbsp; · &nbsp;
-  <a href="https://www.linkedin.com/in/mtariq99/">LinkedIn ↗</a>
-
-</div>
-
-<br />
-
-## About
-
-Backend engineer with **5+ years of professional experience** building Go and Node.js distributed systems, gRPC microservices, event-driven pipelines, and real-time platforms.
-
-I'm expanding into AI application engineering through personal projects focused on retrieval-augmented generation, grounded LLM responses, evaluation, and secure tool orchestration.
-
-My focus is on integrating AI into backend systems without compromising security, reliability, or application-owned business logic.
-
-## Selected work
-
-### `01` &nbsp; Retrievion
-
-**Multi-tenant RAG backend · Go**
-
-A working prototype for grounded question answering over private PDFs, with asynchronous ingestion, hybrid retrieval, citations, and evaluation.
-
-**Retrieval & ingestion**
-- Tenant-scoped SHA-256 deduplication and versioned document storage using Backblaze B2.
-- RabbitMQ ingestion jobs with a dead-letter queue, page-aware parent/child chunking, and batched Gemini embeddings.
-- PostgreSQL hybrid retrieval using pgvector cosine similarity with HNSW and full-text search with GIN.
-- Reciprocal Rank Fusion (RRF) and a token-bounded context budget.
-
-**Grounded generation & evaluation**
-- Server-Sent Events (SSE) streaming with citation resolution to source chunks, documents, and pages.
-- Dataset-driven evaluation measuring Precision@K, Recall@K, and MRR.
-- LLM-as-judge faithfulness evaluation, persisted results, and baseline comparisons.
-- Prometheus metrics, OpenTelemetry, and Sentry instrumentation.
-
-<sub>Go · PostgreSQL · pgvector · Redis · RabbitMQ · Gemini · Prometheus</sub>
-
-[View source code →](https://github.com/MTariq99/retrievion)
-
-<sub>Status: working prototype. Evaluation results are not yet reported; cross-encoder reranking and additional hardening remain planned.</sub>
+I haven't shipped AI professionally yet. What I have done is build it end to end on my own, with the same care I'd give a payments service. Both projects below are public, so you can judge the code instead of taking my word for it.
 
 ---
 
-### `02` &nbsp; DispatchAI
+## What I'm working on right now
 
-**LLM orchestration engine · Go**
+**At work:** backend services for large government logistics projects. That means live driver and cargo tracking with location updates every five seconds, a system of 10+ gRPC microservices (SSO, configuration, profiling, email, notifications), APIs around route optimization and delivery scheduling, and payment gateway integration over gRPC.
 
-An early-stage orchestration engine that connects LLM-generated tool proposals to host-owned application logic through explicit integration boundaries.
+**On my own time:**
+- Running Retrievion's evaluation suite on a real test set and writing up what the numbers say, including where it fails.
+- Adding cross-encoder reranking to Retrievion.
+- Hardening DispatchAI: approval workflows, audit trail, and key rotation.
 
-**Orchestration & security**
-- Bounded tool-calling loop, conversation coordination, and a versioned per-integration tool registry.
-- ECDSA P-256 / SHA-256 signed requests with timestamp validation and nonce-based replay protection.
-- Request-body hash binding and integration key enrollment.
-- Request idempotency using fingerprints, run lifecycle management, and tool-call idempotency keyed by run and call ID.
-- Ports-and-adapters architecture with a provider-agnostic LLM interface and Gemini adapter.
-
-**Design principle**
-
-LLMs propose actions; the host application remains responsible for validating and authorizing tool calls. Exactly-once effects across external host systems are not guaranteed.
-
-<sub>Go · LLM Integration · ECDSA · API Security · Idempotency</sub>
-
-[View source code →](https://github.com/MTariq99/dispatchai)
-
-<sub>Status: early-stage prototype. Approval workflows, audit and observability, key rotation, and further security hardening remain planned.</sub>
+<!-- TODO: once you have Retrievion eval numbers, add them here as a one-liner, e.g. "Latest Retrievion run: Recall@5 = __, MRR = __ on __ questions." -->
 
 ---
 
-## Professional experience
+## Projects worth two minutes
 
-**Target Technologies Pakistan**  
-*Backend Engineer (Go) · July 2025 – Present*
+### [Retrievion](https://github.com/MTariq99/retrievion): grounded Q&A over private PDFs
+A multi-tenant RAG backend in Go. You upload PDFs, ask questions, and get streamed answers with citations that resolve to the exact chunk, document, and page.
 
-- Develop backend services for Government of Oman projects, including live driver and cargo tracking with location updates every five seconds.
-- Work across an architecture of 10+ gRPC microservices, including SSO, configuration, profiling, email, and notifications.
-- Build APIs around route optimization and delivery scheduling services.
-- Integrate payment gateway functionality through gRPC clients.
+- Ingestion runs asynchronously through RabbitMQ (with a dead-letter queue), so uploads never block and failures don't vanish.
+- Retrieval is hybrid: pgvector (HNSW) plus Postgres full-text search, merged with Reciprocal Rank Fusion and trimmed to a token budget.
+- It ships with its own evals (Precision@K, Recall@K, MRR, and LLM-judged faithfulness) so I can tell whether a change made answers better or just different.
 
-**ZAMH Technologies LLC**  
-*Backend Developer (Go & Node.js) · September 2024 – June 2025*
+`Go · PostgreSQL · pgvector · Redis · RabbitMQ · Gemini · Prometheus · OpenTelemetry`
+Status: working prototype, reranking is next.
 
-- Developed backend APIs, application business logic, and database access improvements.
-- Implemented Redis caching and real-time chat and notification functionality using WebSockets.
-- Monitored application performance and service health using Prometheus and Grafana.
-- Investigated production issues and improved reliability through testing, refactoring, and code reviews.
+<!-- TODO: if you add a screenshot or a short demo GIF of a streamed, cited answer, put it here. It will do more than any bullet. -->
 
-**CapregSoft Ltd.**  
-*Backend Developer (Go & Node.js) · January 2023 – August 2024 · Wah Cantt, On-site*
+### [DispatchAI](https://github.com/MTariq99/dispatchai): LLMs propose, your app decides
+An orchestration engine that lets an LLM suggest tool calls while your application stays in charge of what actually runs. My rule: the model never gets to authorize itself.
 
-- Developed backend services and APIs using Go and Node.js to support application features and business workflows.
-- Built backend functionality for a bulk email verification platform, supporting email verification workflows and related processing.
-- Improved database query performance through query restructuring, indexing, and server-side performance tuning.
-- Worked on database access patterns and backend logic to improve the efficiency and maintainability of existing services.
-- Operated blue-green deployment workflows to support application releases and reduce deployment risk.
-- Troubleshot backend defects and performance issues, contributing to service stability and ongoing application maintenance.
+- Every request is signed (ECDSA P-256) with timestamp checks, nonce-based replay protection, and the request body bound to the signature.
+- Runs and tool calls are idempotent, so retries don't double-fire.
+- Provider-agnostic LLM interface with a Gemini adapter (ports and adapters).
 
-**Freelance Backend Engineer**  
-*Backend Developer (Go) · April 2021 – January 2023 · Remote*
-
-- Delivered backend systems for clients across multiple industries using Go.
-- Designed event-driven microservice architectures with Apache Kafka and RabbitMQ.
-- Reduced data processing latency through asynchronous pipeline design and performance tuning.
-- Implemented gRPC for inter-service communication across client projects.
-
-## Engineering toolkit
-
-**Languages**
-
-Go · TypeScript · JavaScript · SQL
-
-**Backend & distributed systems**
-
-gRPC · REST APIs · Microservices · WebSockets · Socket.IO · Event-driven architecture
-
-**Databases & messaging**
-
-PostgreSQL · pgvector · Redis · MySQL · MongoDB · Kafka · RabbitMQ
-
-**AI / LLM application engineering**
-
-RAG · Embeddings · Hybrid retrieval · Reciprocal Rank Fusion · Grounded generation · Citation resolution · SSE streaming · Tool calling · Retrieval evaluation
-
-**Security & reliability**
-
-ECDSA P-256 request signing · Replay protection · JWT and opaque-token authentication · Permission-based access control · Prometheus · Grafana · OpenTelemetry · Sentry
-
-**Infrastructure**
-
-Docker · Docker Compose · CI/CD · Linux · Git · Temporal
+`Go · ECDSA · API security · Idempotency · LLM integration`
+Status: early-stage prototype, being hardened. It does not claim exactly-once effects on external systems, and says so.
 
 ---
 
-## Education
+## What I work with
 
-**International Islamic University Islamabad**  
-Bachelor of Science in Software Engineering
+**Languages:** Go (my daily driver), Node.js, TypeScript, JavaScript
 
-## Contact
+**Services & APIs:** gRPC, REST, Gin, Express, microservices, clean architecture, API and system design
 
-Interested in backend engineering, distributed systems, and practical AI applications.
+**Real-time & messaging:** Kafka, RabbitMQ, WebSockets, Socket.IO, event-driven design
 
-<div align="center">
+**Data:** PostgreSQL (including pgvector), MySQL, MongoDB, Redis, query and index tuning
 
-  <a href="mailto:tariqwc99@gmail.com">Email</a>
-  &nbsp; · &nbsp;
-  <a href="https://www.linkedin.com/in/mtariq99/">LinkedIn</a>
-  &nbsp; · &nbsp;
-  <a href="https://github.com/MTariq99">GitHub</a>
-  &nbsp; · &nbsp;
-  <a href="https://muhammad-tariq.vercel.app/">Portfolio</a>
+**Ship & run:** Docker, Kubernetes, CI/CD, blue-green and zero-downtime releases, Linux, Prometheus, Grafana, Temporal
 
-  <br /><br />
+**Domains:** government and enterprise systems, payments, real-time tracking, SaaS
 
-  <sub>Reliable systems. Grounded AI. Thoughtful engineering.</sub>
+---
 
-</div>
+## Where I've worked
+
+- **Target Technologies Pakistan**, Backend Engineer (Go), Jul 2025 to now: Government of Oman logistics, live tracking, gRPC microservices.
+- **ZAMH Technologies**, Backend Developer (Go & Node.js), Sep 2024 to Jun 2025: Redis caching, real-time chat and notifications over WebSockets, Prometheus and Grafana monitoring.
+- **CapregSoft**, Backend Developer (Go & Node.js), Jan 2023 to Aug 2024: bulk email verification platform, query and index tuning, blue-green deployments.
+- **Freelance**, Backend Developer (Go), Apr 2021 to Jan 2023: event-driven microservices on Kafka and RabbitMQ, gRPC between services.
+
+Full details are in my [résumé](https://github.com/MTariq99/MTariq99/raw/main/assets/Muhammad_Tariq_Resume_AI.pdf).
+
+---
+
+## What I'm looking for
+
+Remote backend roles where I can own services end to end, ideally Go-first. I'm especially interested in teams building AI features on top of solid backends, where retrieval, evaluation, and security matter as much as the model.
+
+---
+
+## Say hi
+
+I'm based in Islamabad (UTC+5), currently working on-site, and open to remote roles.
+
+📧 [your.email@example.com](mailto:tariqwc99@gmail.com)
+
+💼 [LinkedIn](https://www.linkedin.com/in/mtariq99/)
+
+🌐 [Portfolio](https://muhammad-tariq.vercel.app/)
+
+📄 [Résumé](https://github.com/MTariq99/MTariq99/raw/main/assets/Muhammad_Tariq_Resume_AI.pdf)
