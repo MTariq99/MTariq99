@@ -65,7 +65,7 @@ Status: early-stage prototype, being hardened. It does not claim exactly-once ef
 
 ## Where I've worked
 
-- **Target Technologies Pakistan**, Backend Engineer (Go), Jul 2025 to now: Government of Oman logistics, live tracking, gRPC microservices.
+- **Target Energy Solutions**, Backend Engineer (Go), Jul 2025 to now: Government of Oman logistics, live tracking, gRPC microservices.
 - **ZAMH Technologies**, Backend Developer (Go & Node.js), Sep 2024 to Jun 2025: Redis caching, real-time chat and notifications over WebSockets, Prometheus and Grafana monitoring.
 - **CapregSoft**, Backend Developer (Go & Node.js), Jan 2023 to Aug 2024: bulk email verification platform, query and index tuning, blue-green deployments.
 - **Freelance**, Backend Developer (Go), Apr 2021 to Jan 2023: event-driven microservices on Kafka and RabbitMQ, gRPC between services.
